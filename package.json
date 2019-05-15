@@ -1,0 +1,25 @@
+{
+  "name": "simplebem",
+  "version": "0.0.1",
+  "description": "Simple SCSS framework for creating UI using BEM syntax and no defaults ",
+  "main": "src/index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piousp/simpleBEM.git"
+  },
+  "keywords": [
+    "scss",
+    "sass",
+    "ui",
+    "css"
+  ],
+  "author": "Pablo Peraza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/piousp/simpleBEM/issues"
+  },
+  "homepage": "https://github.com/piousp/simpleBEM#readme"
+}
