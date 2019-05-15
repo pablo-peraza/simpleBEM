@@ -1,0 +1,196 @@
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  @extend %headers;
+}
+
+code {
+  @extend .fondo--negro4;
+  @extend .text--blanco;
+  border-radius: 3px;
+  font-family: monospace;
+  padding: 0.5em 1em;
+  line-height: 2.5em;
+}
+
+.text {
+  @extend %sans;
+  font-weight: 400;
+  color: inherit;
+}
+
+p.text{
+  margin: 0.3em 0;
+}
+
+.text--bold {
+  font-weight: bold;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text--justify {
+  text-align: justify;
+}
+
+.text--underline {
+  text-decoration: underline;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+.text--lowercase {
+  text-transform: lowercase;
+}
+
+.text--capitalize {
+  text-transform: capitalize;
+}
+
+.text--big {
+  font-size: larger;
+}
+
+.text--small {
+  font-size: $scale * .75rem;
+}
+
+.text--extra-big {
+  font-size: xx-large;
+}
+
+.text--extra-small {
+  font-size: xx-small;
+}
+
+.text--lila {
+  color: $lila !important;
+}
+
+.text--morado {
+  color: $morado !important;
+}
+
+.text--indigo {
+  color: $indigo !important;
+}
+
+.text--azul {
+  color: $azul !important;
+}
+
+.text--celeste {
+  color: $celeste !important;
+}
+
+.text--cyan {
+  color: $cyan !important;
+}
+
+.text--turquesa {
+  color: $turquesa !important;
+}
+
+.text--verde {
+  color: $verde !important;
+}
+
+.text--kiwi {
+  color: $kiwi !important;
+}
+
+.text--lima {
+  color: $lima !important;
+}
+
+.text--amarillo {
+  color: $amarillo !important;
+}
+
+.text--ambar {
+  color: $ambar !important;
+}
+
+.text--naranja {
+  color: $naranja !important;
+}
+
+.text--tomate {
+  color: $tomate !important;
+}
+
+.text--rojo {
+  color: $rojo !important;
+}
+
+.text--rosado {
+  color: $rosado !important;
+}
+
+.text--negro {
+  color: $negro !important;
+}
+
+.text--negro2 {
+  color: $negro2 !important;
+}
+
+.text--negro4 {
+  color: $negro4 !important;
+}
+
+.text--gris6 {
+  color: $gris6 !important;
+}
+
+.text--gris8 {
+  color: $gris8 !important;
+}
+
+.text--grisa {
+  color: $grisa !important;
+}
+
+.text--grisc {
+  color: $grisc !important;
+}
+
+.text--grisd {
+  color: $grisd !important;
+}
+
+.text--grise {
+  color: $grise !important;
+}
+
+.text--blanco {
+  color: $blanco !important;
+}
+
+.no-results {
+  @extend .text--center;
+  @extend .text--gris8;
+  @extend %serif;
+  font-size: 1.2em;
+  padding-bottom: 1em;
+}

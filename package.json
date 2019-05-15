@@ -4,7 +4,7 @@
   "description": "Simple SCSS framework for creating UI using BEM syntax and no defaults ",
   "main": "src/index.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,16 @@
   "bugs": {
     "url": "https://github.com/piousp/simpleBEM/issues"
   },
-  "homepage": "https://github.com/piousp/simpleBEM#readme"
+  "homepage": "https://github.com/piousp/simpleBEM#readme",
+  "devDependencies": {
+    "eslint": "5.3.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.17.2",
+    "node-sass": "4.12.0",
+    "sass-lint": "1.13.1",
+    "sass-lint-webpack": "1.0.1",
+    "sass-loader": "7.1.0",
+    "webpack": "4.31.0",
+    "webpack-cli": "3.3.2"
+  }
 }

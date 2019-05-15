@@ -1,0 +1,236 @@
+.boton {
+  @extend %sans;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: $scale * 1rem / 1.5;
+  padding: $scale * .3rem $scale * .6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+
+  span {
+    display: none;
+  }
+
+  @include for-phone-only{
+    span {
+      display: inline;
+    }
+  }
+
+  &:active {
+    animation-delay: 0s !important;
+    animation-duration: .45s !important;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &::-moz-focus-inner {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.boton--100{
+  width: 100%;
+}
+
+.boton--xs {
+  font-size: $scale * 1rem / 2;
+  padding: $scale * .15rem $scale * .3rem;
+}
+
+.boton--s {
+  font-size: $scale * 1rem / 1.75;
+  padding: $scale * .2rem $scale * .4rem;
+}
+
+.boton--l {
+  font-size: $scale * 1rem / 1.25;
+  padding: $scale * .4rem $scale * .8rem;
+}
+
+.boton--xl {
+  font-size: $scale * 1rem;
+  padding: $scale * .5rem $scale * 1rem;
+}
+
+.boton--redondo {
+  border-radius: 100px;
+  padding: 1em;
+}
+
+.boton-group {
+  border-radius: 4px;
+  display: inline-flex;
+
+  .boton {
+    border-radius: 0;
+    box-shadow: 0 0 0 0;
+    margin: 0;
+
+    &:first-child {
+      border-bottom-left-radius: 4px;
+      border-top-left-radius: 4px;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: 4px;
+      border-right: 0;
+      border-top-right-radius: 4px;
+    }
+  }
+}
+
+@mixin boton-color($fondo, $letra) {
+  background: linear-gradient(to bottom, $fondo, darken($fondo, 2%));
+  border: 0;
+  color: $letra;
+  transition: ease .05s all;
+  margin-right: 5px;
+  box-shadow: 0px 4px 0 darken($fondo, 15%),
+    0 7px 1px -1px transparentize($negro, .7);
+
+  &:hover {
+    border: 0;
+    background: linear-gradient(to bottom, lighten($fondo, 5%), lighten($fondo, 3%));
+    box-shadow: 0px 4px 0 darken($fondo, 10%),
+      0 7px 1px -1px transparentize($negro, .7);
+  }
+
+  &:active{
+    outline: none;
+    background: linear-gradient(to bottom, darken($fondo, 5%), lighten($fondo, 5%));
+    border: 0;
+    box-shadow: 0px 2px 0 darken($fondo, 8%),
+      0 5px 1px -1px transparentize($negro, .7);
+    transform: translateY(2px);
+  }
+
+  &:focus{
+    outline: none;
+  }
+
+  &:disabled {
+    background: transparentize(darken($fondo, 10%), .3);
+    border-bottom: 0;
+    box-shadow: 0 0 0 $negro;
+    color: transparentize($letra, .3);
+    pointer-events: none;
+    outline: none;
+    &:hover {
+      background: transparentize(darken($fondo, 10%), .3);
+      box-shadow: 0 0 0 $negro;
+    }
+  }
+}
+
+.boton--negro {
+  @include boton-color($negro2, $blanco);
+}
+
+.boton--negro2 {
+  @include boton-color($negro2, $blanco);
+}
+
+.boton--negro4 {
+  @include boton-color($negro4, $blanco);
+}
+
+.boton--gris6 {
+  @include boton-color($gris6, $blanco);
+}
+
+.boton--gris8 {
+  @include boton-color($gris8, $negro);
+}
+
+.boton--grisa {
+  @include boton-color($grisa, $negro2);
+}
+
+.boton--grisc {
+  @include boton-color($grisc, $negro2);
+}
+
+.boton--grisd {
+  @include boton-color($grisd, $negro2);
+}
+
+.boton--grise {
+  @include boton-color($grise, $negro2);
+}
+
+.boton--blanco {
+  @include boton-color($blanco, $negro2);
+}
+
+.boton--lila {
+  @include boton-color($lila, $blanco);
+}
+
+.boton--morado {
+  @include boton-color($morado, $blanco);
+}
+
+.boton--indigo {
+  @include boton-color($indigo, $blanco);
+}
+
+.boton--azul {
+  @include boton-color($azul, $blanco);
+}
+
+.boton--celeste {
+  @include boton-color($celeste, $blanco);
+}
+
+.boton--cyan {
+  @include boton-color($cyan, $blanco);
+}
+
+.boton--turquesa {
+  @include boton-color($turquesa, $blanco);
+}
+
+.boton--verde {
+  @include boton-color($verde, $blanco);
+}
+
+.boton--kiwi {
+  @include boton-color($kiwi, $negro2);
+}
+
+.boton--lima {
+  @include boton-color($lima, $negro2);
+}
+
+.boton--amarillo {
+  @include boton-color($amarillo, $negro2);
+}
+
+.boton--ambar {
+  @include boton-color($ambar, $negro2);
+}
+
+.boton--naranja {
+  @include boton-color($naranja, $blanco);
+}
+
+.boton--tomate {
+  @include boton-color($tomate, $blanco);
+}
+
+.boton--rojo {
+  @include boton-color($rojo, $blanco);
+}
+
+.boton--rosado {
+  @include boton-color($rosado, $blanco);
+}
