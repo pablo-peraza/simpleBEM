@@ -4,7 +4,8 @@
   "description": "Simple SCSS framework for creating UI using BEM syntax and no defaults ",
   "main": "src/index.scss",
   "scripts": {
-    "build": "webpack",
+    "build": "node-sass src/index.scss -o build --source-comments --source-map true",
+    "dist": "node-sass src/index.scss -o dist --output-style compressed",
     "lint": "sass-lint --verbose -q"
   },
   "repository": {

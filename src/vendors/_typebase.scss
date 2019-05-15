@@ -1,51 +1,39 @@
-/*! Typebase.scss v0.1.0 | MIT License */
+//Typebase.scss v0.1.0 | MIT License
 //https://github.com/devinhunt/typebase.css/
-// Typesetting variables. Edit here or override in main file prior to import of this.
-$baseFontSize: 22 !default; // in pixels. This would result in 22px on desktop
-$baseLineHeight: 1.5 !default; // how large the line height is as a multiple of font size
-$leading: $baseLineHeight * 1rem !default; // Rate of growth for headings
-// I actually like this to be slightly smaller then the leading. Makes for tight headings.
-$scale: 1.414 !default;
-/* Setup */
-html {
+.html {
   font-size: $baseFontSize / 16 * 100%;
-  // Make everything look a little nicer in webkit
   -webkit-font-smoothing: antialiased;
-  // -webkit-text-size-adjust: auto
-  // -moz-text-size-adjust: auto
-  // -ms-text-size-adjust: auto
-  // -o-text-size-adjust: auto
-  // text-size-adjust: auto
+  text-size-adjust: auto;
 }
-/* Copy & Lists */
-p {
+
+.p {
   line-height: $leading;
   margin-top: $leading;
   margin-bottom: 0;
 }
 
-ol,
-ul {
+.ol,
+.ul {
   margin-top: $leading;
   margin-bottom: $leading;
 
-  li {
+  .li {
     line-height: $leading;
   }
 
-  ol,
-  ul {
+  .ol,
+  .ul {
     margin-top: 0;
     margin-bottom: 0;
   }
 }
 
-blockquote {
+.blockquote {
   line-height: $leading;
   margin-top: $leading;
   margin-bottom: $leading;
 }
-/* Headings */
+
 .h1,
 .h2,
 .h3,
@@ -91,13 +79,13 @@ blockquote {
   border-collapse: collapse;
 }
 
-td,
-th {
+.td,
+.th {
   padding: 0;
   line-height: $baseLineHeight * $baseFontSize - 0px;
 }
 /* Code blocks */
-code {
+.code {
   // Forces text to constrain to the line-height. Not ideal, but works.
   vertical-align: bottom;
 }

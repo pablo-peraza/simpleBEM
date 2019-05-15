@@ -1,6 +1,6 @@
 @mixin fondo-color($color) {
-  background: $color !important;
-  background-color: $color !important;
+  background: $color;
+  background-color: $color;
 }
 
 .fondo--lila  {
