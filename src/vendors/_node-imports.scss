@@ -1,0 +1,8 @@
+@import "~minireset.css/minireset";
+@import "~normalize.css/normalize";
+@import "~normalize-opentype.css/normalize-opentype";
+@import "~animate.css/animate";
+
+@media print {
+  @import "~gutenberg-css/scss/gutenberg";
+}

@@ -1,0 +1,196 @@
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  @extend %headers;
+}
+
+code {
+  @extend .fondo--negro4;
+  @extend .text--blanco;
+  border-radius: 3px;
+  font-family: monospace;
+  padding: 0.5em 1em;
+  line-height: 2.5em;
+}
+
+.text {
+  @extend %sans;
+  font-weight: 400;
+  color: inherit;
+}
+
+p.text{
+  margin: 0.3em 0;
+}
+
+.text--bold {
+  font-weight: bold;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text--justify {
+  text-align: justify;
+}
+
+.text--underline {
+  text-decoration: underline;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+.text--lowercase {
+  text-transform: lowercase;
+}
+
+.text--capitalize {
+  text-transform: capitalize;
+}
+
+.text--big {
+  font-size: larger;
+}
+
+.text--small {
+  font-size: small;
+}
+
+.text--extra-big {
+  font-size: xx-large;
+}
+
+.text--extra-small {
+  font-size: xx-small;
+}
+
+.text--lila {
+  color: $lila;
+}
+
+.text--morado {
+  color: $morado;
+}
+
+.text--indigo {
+  color: $indigo;
+}
+
+.text--azul {
+  color: $azul;
+}
+
+.text--celeste {
+  color: $celeste;
+}
+
+.text--cyan {
+  color: $cyan;
+}
+
+.text--turquesa {
+  color: $turquesa;
+}
+
+.text--verde {
+  color: $verde;
+}
+
+.text--kiwi {
+  color: $kiwi;
+}
+
+.text--lima {
+  color: $lima;
+}
+
+.text--amarillo {
+  color: $amarillo;
+}
+
+.text--ambar {
+  color: $ambar;
+}
+
+.text--naranja {
+  color: $naranja;
+}
+
+.text--tomate {
+  color: $tomate;
+}
+
+.text--rojo {
+  color: $rojo;
+}
+
+.text--rosado {
+  color: $rosado;
+}
+
+.text--negro {
+  color: $negro;
+}
+
+.text--negro2 {
+  color: $negro2;
+}
+
+.text--negro4 {
+  color: $negro4;
+}
+
+.text--gris6 {
+  color: $gris6;
+}
+
+.text--gris8 {
+  color: $gris8;
+}
+
+.text--grisa {
+  color: $grisa;
+}
+
+.text--grisc {
+  color: $grisc;
+}
+
+.text--grisd {
+  color: $grisd;
+}
+
+.text--grise {
+  color: $grise;
+}
+
+.text--blanco {
+  color: $blanco;
+}
+
+.no-results {
+  @extend .text--center;
+  @extend .text--gris8;
+  @extend %serif;
+  font-size: 1.2em;
+  padding-bottom: 1em;
+}

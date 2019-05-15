@@ -1,0 +1,38 @@
+{
+  "name": "simplebem",
+  "version": "0.0.1",
+  "description": "Simple SCSS framework for creating UI using BEM syntax and no defaults ",
+  "main": "src/index.scss",
+  "scripts": {
+    "build": "node-sass src/index.scss -o build --source-comments --source-map true",
+    "dist": "node-sass src/index.scss -o dist --output-style compressed",
+    "lint": "sass-lint --verbose -q"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piousp/simpleBEM.git"
+  },
+  "keywords": [
+    "scss",
+    "sass",
+    "ui",
+    "css"
+  ],
+  "author": "Pablo Peraza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/piousp/simpleBEM/issues"
+  },
+  "homepage": "https://github.com/piousp/simpleBEM#readme",
+  "devDependencies": {
+    "eslint": "5.3.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.17.2",
+    "node-sass": "4.12.0",
+    "sass-lint": "1.13.1",
+    "sass-lint-webpack": "1.0.1",
+    "sass-loader": "7.1.0",
+    "webpack": "4.31.0",
+    "webpack-cli": "3.3.2"
+  }
+}

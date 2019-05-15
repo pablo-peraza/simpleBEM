@@ -1,0 +1,43 @@
+{
+  "options": {
+    "merge-default-rules": false,
+    "formatter": "stylish",
+    "max-warnings": 50
+  },
+  "files": {
+    "include": "src/**/*.scss",
+    "ignore": [
+      "node_modes/**/*.*"
+    ]
+  },
+  "rules": {
+    "extends-before-mixins": 2,
+    "extends-before-declarations": 2,
+    "placeholder-in-extend": 0,
+    "mixins-before-declarations": [
+      2,
+      {
+        "exclude": [
+          "breakpoint",
+          "mq"
+        ]
+      }
+    ],
+    "no-warn": 1,
+    "no-debug": 1,
+    "no-ids": 2,
+    "no-important": 2,
+    "hex-notation": [
+      2,
+      {
+        "style": "lowercase"
+      }
+    ],
+    "indentation": [
+      2,
+      {
+        "size": 2
+      }
+    ]
+  }
+}
