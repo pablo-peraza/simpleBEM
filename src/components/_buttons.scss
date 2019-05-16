@@ -1,4 +1,4 @@
-.boton {
+.button {
   @extend %sans;
   box-sizing: border-box;
   border: 0;
@@ -37,40 +37,40 @@
   }
 }
 
-.boton--100{
+.button--100{
   width: 100%;
 }
 
-.boton--xs {
+.button--xs {
   font-size: $scale * 1rem / 2;
   padding: $scale * .15rem $scale * .3rem;
 }
 
-.boton--s {
+.button--s {
   font-size: $scale * 1rem / 1.75;
   padding: $scale * .2rem $scale * .4rem;
 }
 
-.boton--l {
+.button--l {
   font-size: $scale * 1rem / 1.25;
   padding: $scale * .4rem $scale * .8rem;
 }
 
-.boton--xl {
+.button--xl {
   font-size: $scale * 1rem;
   padding: $scale * .5rem $scale * 1rem;
 }
 
-.boton--redondo {
+.button--round {
   border-radius: 100px;
   padding: 1em;
 }
 
-.boton-group {
+.button-group {
   border-radius: 4px;
   display: inline-flex;
 
-  .boton {
+  .button {
     margin: 0;
     border-radius: 0;
     box-shadow: 0 0 0 0;
@@ -88,25 +88,25 @@
   }
 }
 
-@mixin boton-color($fondo, $letra) {
-  background: linear-gradient(to bottom, $fondo, darken($fondo, 2%));
+@mixin colored-button($bg, $color) {
+  background: linear-gradient(to bottom, $bg, darken($bg, 2%));
   border: 0;
-  color: $letra;
+  color: $color;
   transition: ease .05s all;
   margin-right: 5px;
-  box-shadow: 0px 4px 0 darken($fondo, 15%), 0 7px 1px -1px transparentize($negro, .7);
+  box-shadow: 0px 4px 0 darken($bg, 15%), 0 7px 1px -1px transparentize($black, .7);
 
   &:hover {
     border: 0;
-    background: linear-gradient(to bottom, lighten($fondo, 5%), lighten($fondo, 3%));
-    box-shadow: 0px 4px 0 darken($fondo, 10%), 0 7px 1px -1px transparentize($negro, .7);
+    background: linear-gradient(to bottom, lighten($bg, 5%), lighten($bg, 3%));
+    box-shadow: 0px 4px 0 darken($bg, 10%), 0 7px 1px -1px transparentize($black, .7);
   }
 
   &:active{
     outline: none;
-    background: linear-gradient(to bottom, darken($fondo, 5%), lighten($fondo, 5%));
+    background: linear-gradient(to bottom, darken($bg, 5%), lighten($bg, 5%));
     border: 0;
-    box-shadow: 0px 2px 0 darken($fondo, 8%), 0 5px 1px -1px transparentize($negro, .7);
+    box-shadow: 0px 2px 0 darken($bg, 8%), 0 5px 1px -1px transparentize($black, .7);
     transform: translateY(2px);
   }
 
@@ -115,119 +115,119 @@
   }
 
   &:disabled {
-    background: transparentize(darken($fondo, 10%), .3);
+    background: transparentize(darken($bg, 10%), .3);
     border-bottom: 0;
-    box-shadow: 0 0 0 $negro;
-    color: transparentize($letra, .3);
+    box-shadow: 0 0 0 $black;
+    color: transparentize($color, .3);
     pointer-events: none;
     outline: none;
     &:hover {
-      background: transparentize(darken($fondo, 10%), .3);
-      box-shadow: 0 0 0 $negro;
+      background: transparentize(darken($bg, 10%), .3);
+      box-shadow: 0 0 0 $black;
     }
   }
 }
 
-.boton--negro {
-  @include boton-color($negro2, $blanco);
+.button--black {
+  @include colored-button($black2, $white);
 }
 
-.boton--negro2 {
-  @include boton-color($negro2, $blanco);
+.button--black2 {
+  @include colored-button($black2, $white);
 }
 
-.boton--negro4 {
-  @include boton-color($negro4, $blanco);
+.button--black4 {
+  @include colored-button($black4, $white);
 }
 
-.boton--gris6 {
-  @include boton-color($gris6, $blanco);
+.button--grey6 {
+  @include colored-button($grey6, $white);
 }
 
-.boton--gris8 {
-  @include boton-color($gris8, $negro);
+.button--grey8 {
+  @include colored-button($grey8, $black);
 }
 
-.boton--grisa {
-  @include boton-color($grisa, $negro2);
+.button--greya {
+  @include colored-button($greya, $black2);
 }
 
-.boton--grisc {
-  @include boton-color($grisc, $negro2);
+.button--greyc {
+  @include colored-button($greyc, $black2);
 }
 
-.boton--grisd {
-  @include boton-color($grisd, $negro2);
+.button--greyd {
+  @include colored-button($greyd, $black2);
 }
 
-.boton--grise {
-  @include boton-color($grise, $negro2);
+.button--greye {
+  @include colored-button($greye, $black2);
 }
 
-.boton--blanco {
-  @include boton-color($blanco, $negro2);
+.button--white {
+  @include colored-button($white, $black2);
 }
 
-.boton--lila {
-  @include boton-color($lila, $blanco);
+.button--lilac {
+  @include colored-button($lilac, $white);
 }
 
-.boton--morado {
-  @include boton-color($morado, $blanco);
+.button--purple {
+  @include colored-button($purple, $white);
 }
 
-.boton--indigo {
-  @include boton-color($indigo, $blanco);
+.button--indigo {
+  @include colored-button($indigo, $white);
 }
 
-.boton--azul {
-  @include boton-color($azul, $blanco);
+.button--blue {
+  @include colored-button($blue, $white);
 }
 
-.boton--celeste {
-  @include boton-color($celeste, $blanco);
+.button--cerulean {
+  @include colored-button($cerulean, $white);
 }
 
-.boton--cyan {
-  @include boton-color($cyan, $blanco);
+.button--cyan {
+  @include colored-button($cyan, $white);
 }
 
-.boton--turquesa {
-  @include boton-color($turquesa, $blanco);
+.button--teal {
+  @include colored-button($teal, $white);
 }
 
-.boton--verde {
-  @include boton-color($verde, $blanco);
+.button--green {
+  @include colored-button($green, $white);
 }
 
-.boton--kiwi {
-  @include boton-color($kiwi, $negro2);
+.button--kiwi {
+  @include colored-button($kiwi, $black2);
 }
 
-.boton--lima {
-  @include boton-color($lima, $negro2);
+.button--lime {
+  @include colored-button($lime, $black2);
 }
 
-.boton--amarillo {
-  @include boton-color($amarillo, $negro2);
+.button--yellow {
+  @include colored-button($yellow, $black2);
 }
 
-.boton--ambar {
-  @include boton-color($ambar, $negro2);
+.button--amber {
+  @include colored-button($amber, $black2);
 }
 
-.boton--naranja {
-  @include boton-color($naranja, $blanco);
+.button--orange {
+  @include colored-button($orange, $white);
 }
 
-.boton--tomate {
-  @include boton-color($tomate, $blanco);
+.button--tomato {
+  @include colored-button($tomato, $white);
 }
 
-.boton--rojo {
-  @include boton-color($rojo, $blanco);
+.button--red {
+  @include colored-button($red, $white);
 }
 
-.boton--rosado {
-  @include boton-color($rosado, $blanco);
+.button--pink {
+  @include colored-button($pink, $white);
 }

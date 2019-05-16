@@ -8,9 +8,9 @@
   @extend %headers;
 }
 
-code {
-  @extend .fondo--negro4;
-  @extend .text--blanco;
+.code {
+  @extend .bg--black4;
+  @extend .text--white;
   border-radius: 3px;
   font-family: monospace;
   padding: 0.5em 1em;
@@ -67,129 +67,130 @@ p.text{
   text-transform: capitalize;
 }
 
-.text--big {
-  font-size: larger;
-}
-
-.text--small {
-  font-size: small;
-}
-
-.text--extra-big {
-  font-size: xx-large;
-}
-
-.text--extra-small {
+.text--xs {
   font-size: xx-small;
 }
 
-.text--lila {
-  color: $lila;
+.text--s {
+  font-size: small;
 }
 
-.text--morado {
-  color: $morado;
+.text--l {
+  font-size: larger;
+}
+
+.text--xl {
+  font-size: xx-large;
+}
+
+
+.text--lilac {
+  color: $lilac;
+}
+
+.text--purple {
+  color: $purple;
 }
 
 .text--indigo {
   color: $indigo;
 }
 
-.text--azul {
-  color: $azul;
+.text--blue {
+  color: $blue;
 }
 
-.text--celeste {
-  color: $celeste;
+.text--cerulean {
+  color: $cerulean;
 }
 
 .text--cyan {
   color: $cyan;
 }
 
-.text--turquesa {
-  color: $turquesa;
+.text--teal {
+  color: $teal;
 }
 
-.text--verde {
-  color: $verde;
+.text--green {
+  color: $green;
 }
 
 .text--kiwi {
   color: $kiwi;
 }
 
-.text--lima {
-  color: $lima;
+.text--lime {
+  color: $lime;
 }
 
-.text--amarillo {
-  color: $amarillo;
+.text--yellow {
+  color: $yellow;
 }
 
-.text--ambar {
-  color: $ambar;
+.text--amber {
+  color: $amber;
 }
 
-.text--naranja {
-  color: $naranja;
+.text--orange {
+  color: $orange;
 }
 
-.text--tomate {
-  color: $tomate;
+.text--tomato {
+  color: $tomato;
 }
 
-.text--rojo {
-  color: $rojo;
+.text--red {
+  color: $red;
 }
 
-.text--rosado {
-  color: $rosado;
+.text--pink {
+  color: $pink;
 }
 
-.text--negro {
-  color: $negro;
+.text--black {
+  color: $black;
 }
 
-.text--negro2 {
-  color: $negro2;
+.text--black2 {
+  color: $black2;
 }
 
-.text--negro4 {
-  color: $negro4;
+.text--black4 {
+  color: $black4;
 }
 
-.text--gris6 {
-  color: $gris6;
+.text--grey6 {
+  color: $grey6;
 }
 
-.text--gris8 {
-  color: $gris8;
+.text--grey8 {
+  color: $grey8;
 }
 
-.text--grisa {
-  color: $grisa;
+.text--greya {
+  color: $greya;
 }
 
-.text--grisc {
-  color: $grisc;
+.text--greyc {
+  color: $greyc;
 }
 
-.text--grisd {
-  color: $grisd;
+.text--greyd {
+  color: $greyd;
 }
 
-.text--grise {
-  color: $grise;
+.text--greye {
+  color: $greye;
 }
 
-.text--blanco {
-  color: $blanco;
+.text--white {
+  color: $white;
 }
 
 .no-results {
   @extend .text--center;
-  @extend .text--gris8;
+  @extend .text--grey6;
   @extend %serif;
   font-size: 1.2em;
   padding-bottom: 1em;

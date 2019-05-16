@@ -29,9 +29,9 @@
   }
 
   &::after {
-    background-color: $blanco;
+    background-color: $white;
     border-radius: 500rem;
-    box-shadow: 0 -1px 1px 0 $sombra1;
+    box-shadow: 0 -1px 1px 0 $shadow1;
     content: "";
     height: .5em;
     left: -.25em;
@@ -42,107 +42,107 @@
   }
 }
 
-.badge--lila {
-  @extend .fondo--lila;
-  color: $blanco;
+.badge--lilac {
+  @extend .bg--lilac;
+  color: $white;
 }
 
-.badge--morado {
-  @extend .fondo--morado;
-  color: $blanco;
+.badge--purple {
+  @extend .bg--purple;
+  color: $white;
 }
 
 .badge--indigo {
-  @extend .fondo--indigo;
-  color: $blanco;
+  @extend .bg--indigo;
+  color: $white;
 }
 
-.badge--azul {
-  @extend .fondo--azul;
-  color: $blanco;
+.badge--blue {
+  @extend .bg--blue;
+  color: $white;
 }
 
-.badge--celeste {
-  @extend .fondo--celeste;
-  color: $blanco;
+.badge--cerulean {
+  @extend .bg--cerulean;
+  color: $white;
 }
 
 .badge--cyan {
-  @extend .fondo--cyan;
-  color: $blanco;
+  @extend .bg--cyan;
+  color: $white;
 }
 
-.badge--turquesa {
-  @extend .fondo--turquesa;
-  color: $blanco;
+.badge--teal {
+  @extend .bg--teal;
+  color: $white;
 }
 
-.badge--verde {
-  @extend .fondo--verde;
-  color: $blanco;
+.badge--green {
+  @extend .bg--green;
+  color: $white;
 }
 
 .badge--kiwi {
-  @extend .fondo--kiwi;
-  color: $negro;
+  @extend .bg--kiwi;
+  color: $black;
 }
 
-.badge--lima {
-  @extend .fondo--lima;
-  color: $negro;
+.badge--lime {
+  @extend .bg--lime;
+  color: $black;
 }
 
-.badge--amarillo {
-  @extend .fondo--amarillo;
-  color: $negro;
+.badge--yellow {
+  @extend .bg--yellow;
+  color: $black;
 }
 
-.badge--ambar {
-  @extend .fondo--ambar;
-  color: $negro;
+.badge--amber {
+  @extend .bg--amber;
+  color: $black;
 }
 
-.badge--naranja {
-  @extend .fondo--naranja;
-  color: $negro;
+.badge--orange {
+  @extend .bg--orange;
+  color: $black;
 }
 
-.badge--tomate {
-  @extend .fondo--tomate;
-  color: $blanco;
+.badge--tomato {
+  @extend .bg--tomato;
+  color: $white;
 }
 
-.badge--rojo {
-  @extend .fondo--rojo;
-  color: $blanco;
+.badge--red {
+  @extend .bg--red;
+  color: $white;
 }
 
-.badge--rosado {
-  @extend .fondo--rosado;
-  color: $blanco;
+.badge--pink {
+  @extend .bg--pink;
+  color: $white;
 }
 
-.badge--negro {
-  @extend .fondo--negro;
-  color: $blanco;
+.badge--black {
+  @extend .bg--black;
+  color: $white;
 }
 
-.badge--negro2 {
-  @extend .fondo--negro2;
-  color: $blanco;
+.badge--black2 {
+  @extend .bg--black2;
+  color: $white;
 }
 
-.badge--negro4 {
-  @extend .fondo--negro4;
-  color: $blanco;
+.badge--black4 {
+  @extend .bg--black4;
+  color: $white;
 }
 
-.badge--gris6 {
-  @extend .fondo--gris6;
-  color: $blanco;
+.badge--grey6 {
+  @extend .bg--grey6;
+  color: $white;
 }
 
-.badge--gris8 {
-  @extend .fondo--gris8;
-  color: $blanco;
+.badge--grey8 {
+  @extend .bg--grey8;
+  color: $white;
 }

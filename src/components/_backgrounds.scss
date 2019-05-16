@@ -1,108 +1,108 @@
-@mixin fondo-color($color) {
-  background: $color;
-  background-color: $color;
+@mixin bg-color($bg) {
+  background: $bg;
+  background-color: $bg;
 }
 
-.fondo--lila  {
-  @include fondo-color($lila);
+.bg--lilac  {
+  @include bg-color($lilac);
 }
 
-.fondo--morado  {
-  @include fondo-color($morado);
+.bg--purple  {
+  @include bg-color($purple);
 }
 
-.fondo--indigo  {
-  @include fondo-color($indigo);
+.bg--indigo  {
+  @include bg-color($indigo);
 }
 
-.fondo--azul {
-  @include fondo-color($azul);
+.bg--blue {
+  @include bg-color($blue);
 }
 
-.fondo--celeste {
-  @include fondo-color($celeste);
+.bg--cerulean {
+  @include bg-color($cerulean);
 }
 
-.fondo--cyan {
-  @include fondo-color($cyan);
+.bg--cyan {
+  @include bg-color($cyan);
 }
 
-.fondo--turquesa {
-  @include fondo-color($turquesa);
+.bg--teal {
+  @include bg-color($teal);
 }
 
-.fondo--verde {
-  @include fondo-color($verde);
+.bg--green {
+  @include bg-color($green);
 }
 
-.fondo--kiwi {
-  @include fondo-color($kiwi);
+.bg--kiwi {
+  @include bg-color($kiwi);
 }
 
-.fondo--lima {
-  @include fondo-color($lima);
+.bg--lime {
+  @include bg-color($lime);
 }
 
-.fondo--amarillo {
-  @include fondo-color($amarillo);
+.bg--yellow {
+  @include bg-color($yellow);
 }
 
-.fondo--ambar {
-  @include fondo-color($ambar);
+.bg--amber {
+  @include bg-color($amber);
 }
 
-.fondo--naranja {
-  @include fondo-color($naranja);
+.bg--orange {
+  @include bg-color($orange);
 }
 
-.fondo--tomate {
-  @include fondo-color($tomate);
+.bg--tomato {
+  @include bg-color($tomato);
 }
 
-.fondo--rojo {
-  @include fondo-color($rojo);
+.bg--red {
+  @include bg-color($red);
 }
 
-.fondo--rosado {
-  @include fondo-color($rosado);
+.bg--pink {
+  @include bg-color($pink);
 }
 
-.fondo--negro {
-  @include fondo-color($negro);
+.bg--black {
+  @include bg-color($black);
 }
 
-.fondo--negro2 {
-  @include fondo-color($negro2);
+.bg--black2 {
+  @include bg-color($black2);
 }
 
-.fondo--negro4 {
-  @include fondo-color($negro4);
+.bg--black4 {
+  @include bg-color($black4);
 }
 
-.fondo--gris6 {
-  @include fondo-color($gris6);
+.bg--grey6 {
+  @include bg-color($grey6);
 }
 
-.fondo--gris8 {
-  @include fondo-color($gris8);
+.bg--grey8 {
+  @include bg-color($grey8);
 }
 
-.fondo--grisa {
-  @include fondo-color($grisa);
+.bg--greya {
+  @include bg-color($greya);
 }
 
-.fondo--grisc {
-  @include fondo-color($grisc);
+.bg--greyc {
+  @include bg-color($greyc);
 }
 
-.fondo--grisd {
-  @include fondo-color($grisd);
+.bg--greyd {
+  @include bg-color($greyd);
 }
 
-.fondo--grise {
-  @include fondo-color($grise);
+.bg--greye {
+  @include bg-color($greye);
 }
 
-.fondo--blanco {
-  @include fondo-color($blanco);
+.bg--white {
+  @include bg-color($white);
 }
