@@ -11,20 +11,25 @@
 .code {
   @extend .bg--black4;
   @extend .text--white;
+  @extend %sans;
+
   border-radius: 3px;
   font-family: monospace;
-  padding: 0.5em 1em;
+  padding: .5em 1em;
   line-height: 2.5em;
-}
-
-.text {
-  @extend %sans;
   font-weight: 400;
   color: inherit;
 }
 
-p.text{
-  margin: 0.3em 0;
+.text {
+  @extend %sans;
+
+  font-weight: 400;
+  color: inherit;
+}
+
+p.text {
+  margin: .3em 0;
 }
 
 .text--bold {
@@ -82,7 +87,6 @@ p.text{
 .text--xl {
   font-size: xx-large;
 }
-
 
 .text--lilac {
   color: $lilac;
@@ -192,6 +196,7 @@ p.text{
   @extend .text--center;
   @extend .text--grey6;
   @extend %serif;
+
   font-size: 1.2em;
   padding-bottom: 1em;
 }

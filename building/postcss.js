@@ -1,30 +1,36 @@
 const fs = require("fs");
 const rimraf = require("rimraf");
 const postcss = require("postcss");
-const atImport = require("postcss-import");
-const mixins = require("postcss-sassy-mixins");
-const variables = require("postcss-simple-vars");
-const nested = require("postcss-nested");
-
-const immutableCss = require("immutable-css");
+const postImport = require("postcss-import");
+const precss = require("precss");
+const utilities = require("postcss-utilities");
+const stylelint = require("stylelint");
+const reporter = require("postcss-reporter");
 
 const file = "src/index.pcss";
 const css = fs.readFileSync(file, "utf8");
 
 postcss()
-  .use(atImport())
-  .use(mixins())
-  .use(variables())
-  .use(nested())
-  .use(immutableCss())
+  .use(postImport({
+    plugins: [
+      stylelint({}),
+    ],
+  }))
+  .use(utilities())
+  .use(precss())
+  .use(reporter())
   .process(css, {
     from: file,
   })
-  .then(result => write(result.css));
+  .then(result => write(validate(result.css)));
 
 
-function write(result) {
+function write(cssToWrite) {
   rimraf.sync("dist");
   fs.mkdirSync("dist");
-  fs.writeFileSync("dist/simplebem.css", result);
+  fs.writeFileSync("dist/simplebem.css", cssToWrite);
+}
+
+async function validate(cssToValidate) {
+  return cssToValidate;
 }
