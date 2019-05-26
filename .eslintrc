@@ -11,8 +11,7 @@
     "airbnb-base"
   ],
   "rules": {
-    "no-console": "error",
-    "no-debugger": "error",
+    "no-console": 0,
     "semi": ["error", "always"],
     "quotes": ["error", "double"],
     "no-param-reassign": ["error", { "props": false }],

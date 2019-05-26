@@ -5,7 +5,9 @@ const postImport = require("postcss-import");
 const precss = require("precss");
 const utilities = require("postcss-utilities");
 const stylelint = require("stylelint");
+const cssnano = require("cssnano");
 const reporter = require("postcss-reporter");
+const autoprefixer = require("autoprefixer");
 
 const file = "src/index.pcss";
 const css = fs.readFileSync(file, "utf8");
@@ -18,19 +20,23 @@ postcss()
   }))
   .use(utilities())
   .use(precss())
+  .use(autoprefixer())
+  .use(cssnano())
   .use(reporter())
   .process(css, {
     from: file,
+    to: "dist/simplebem.css",
+    map: { inline: false },
   })
-  .then(result => write(validate(result.css)));
+  .then(result => write(result))
+  .catch(err => console.error(err.stack));
 
 
-function write(cssToWrite) {
+function write(result) {
   rimraf.sync("dist");
   fs.mkdirSync("dist");
-  fs.writeFileSync("dist/simplebem.css", cssToWrite);
-}
-
-async function validate(cssToValidate) {
-  return cssToValidate;
+  fs.writeFileSync("dist/simplebem.css", result.css);
+  if (result.map) {
+    fs.writeFileSync("dist/simplebem.css.map", result.map);
+  }
 }
