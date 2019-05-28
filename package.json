@@ -1,21 +1,21 @@
 {
   "name": "simplebem",
   "version": "0.0.1",
-  "description": "Simple SCSS framework for creating UI using BEM syntax and no defaults ",
-  "main": "src/index.scss",
+  "description": "Simple CSS framework for creating UI using BEM syntax and no defaults ",
+  "main": "src/index.pcss",
   "scripts": {
     "build": "node building/postcss.js",
-    "lint": "stylelint src/**/*.pcss --fix"
+    "lint": "stylelint src/**/*.pcss --fix",
+    "debug": "browser-sync start --server --cwd 'docs' --serveStatic 'docs' --index 'docs/index.html' --files 'docs/*.css' --no-ui "
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/piousp/simpleBEM.git"
   },
   "keywords": [
-    "scss",
-    "sass",
     "ui",
-    "css"
+    "css",
+    "framework"
   ],
   "author": "Pablo Peraza",
   "license": "MIT",
@@ -25,6 +25,7 @@
   "homepage": "https://github.com/piousp/simpleBEM#readme",
   "devDependencies": {
     "autoprefixer": "9.5.1",
+    "browser-sync": "2.26.5",
     "cssnano": "4.1.10",
     "eslint": "5.3.0",
     "eslint-config-airbnb-base": "13.1.0",
