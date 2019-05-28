@@ -1,3 +1,14 @@
+/*
+Based on Typebase
+Typebase.scss v0.1.0 | MIT License
+https://github.com/devinhunt/typebase.css/
+*/
+
+html {
+  font-size: calc($baseFontSize / 16 * 100%);
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: auto;
+}
 
 .h1,
 .h2,
@@ -5,13 +16,46 @@
 .h4,
 .h5,
 .h6 {
-  @extend %headers;
+  @include headers;
+
+  margin-top: $leading;
+  margin-bottom: 0;
+  line-height: $leading;
+}
+
+.h1 {
+  font-size: calc(3 * $scale * 1rem);
+  line-height: calc(3 * $leading);
+  margin-top: calc(2 * $leading);
+}
+
+.h2 {
+  font-size: calc(2 * $scale * 1rem);
+  line-height: calc(2 * $leading);
+  margin-top: calc(2 * $leading);
+}
+
+.h3 {
+  font-size: calc(1 * $scale * 1rem);
+}
+
+.h4 {
+  font-size: calc($scale / 2 * 1rem);
+}
+
+.h5 {
+  font-size: calc($scale / 3 * 1rem);
+}
+
+.h6 {
+  font-size: calc($scale / 4 * 1rem);
 }
 
 .code {
+  @include sans-font;
+
   @extend .bg--black4;
   @extend .text--white;
-  @extend %sans;
 
   border-radius: 3px;
   font-family: monospace;
@@ -22,7 +66,7 @@
 }
 
 .text {
-  @extend %sans;
+  @include sans-font;
 
   font-weight: 400;
   color: inherit;
@@ -193,9 +237,10 @@ p.text {
 }
 
 .no-results {
+  @include serif-font;
+
   @extend .text--center;
   @extend .text--grey6;
-  @extend %serif;
 
   font-size: 1.2em;
   padding-bottom: 1em;

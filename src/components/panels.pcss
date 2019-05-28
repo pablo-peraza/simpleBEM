@@ -1,0 +1,59 @@
+@mixin panel-padding {
+  padding: .5em 1em;
+}
+
+.panel {
+  @include panel-padding;
+
+  border-radius: 3px;
+  border: 1px solid $greyd;
+}
+
+.panel__footer {
+  @include serif-font;
+  @include panel-padding;
+
+  border-top: 1px solid $greyd;
+  color: $grey6;
+  font-size: .8em;
+}
+
+.panel__tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+  overflow: hidden;
+}
+
+.panel__tab {
+  @include sans-font;
+
+  @extend .text--center;
+
+  cursor: pointer;
+  flex-basis: 0;
+  flex-grow: 1;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-bottom: 1px solid $greya;
+}
+
+.panel__tab--active {
+  background: $white;
+  border-bottom: none;
+  border-left: 1px solid $greya;
+  border-right: 1px solid $greya;
+  border-top: 1px solid $greya;
+  color: $green;
+  pointer-events: none;
+}
+
+.panel__tab--disabled {
+  background: transparentize($grey8, .3);
+  color: transparentize($white, .67);
+  cursor: not-allowed;
+  pointer-events: none;
+}

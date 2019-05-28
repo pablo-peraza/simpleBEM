@@ -8,9 +8,8 @@
   font-family: "Raleway", serif;
 }
 
-%headers {
-  @extend %serif;
+@mixin headers {
+  @include serif-font;
 
-  margin: .5em 0;
   font-weight: bold;
 }
