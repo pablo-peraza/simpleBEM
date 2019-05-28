@@ -1,0 +1,36 @@
+.table {
+  margin-top: $leading;
+  border-spacing: 0;
+  border-collapse: collapse;
+  position: relative;
+  width: 100%;
+}
+
+.table__header,
+.table__footer {
+  @extend .h5;
+  @extend .text--bold;
+
+  position: relative;
+  text-align: left;
+
+  &::after {
+    position: absolute;
+  }
+
+  th,
+  td {
+    padding: 0;
+    line-height: ($baseLineHeight * $baseFontSize);
+  }
+}
+
+.table__body {
+  @include sans-font;
+
+  th,
+  td {
+    padding: 0;
+    line-height: ($baseLineHeight * $baseFontSize);
+  }
+}
